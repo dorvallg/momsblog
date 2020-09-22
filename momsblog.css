@@ -12,6 +12,7 @@ body {
 header, footer{
     background-color: plum;
     text-align: center;
+    width: 100vw;
 }
 
 header {
@@ -63,9 +64,9 @@ h2, h3, h4 {
 }
 
 .gallery {
-    max-height: 45%;
-    max-width: 45%;
-    padding: 1em;
+    max-height: 40%;
+    max-width: 40%;
+    padding: .5em;
 }
 
 #center-text {
