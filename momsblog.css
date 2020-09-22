@@ -65,7 +65,7 @@ h2, h3, h4 {
 }
 
 .gallery {
-    min-width: 30%;
+    min-width: 200px;
     max-height: 45%;
     max-width: 45%;
     padding: .5em;
