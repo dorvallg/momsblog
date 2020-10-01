@@ -1,22 +1,6 @@
-body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 #left, #right {
     background-color: pink;
     flex-basis: 200px;
-}
-
-header, footer{
-    background-color: plum;
-    text-align: center;
-    width: 100vw;
-}
-
-header {
-    font-size: 2em;
 }
 
 #middle {
@@ -35,20 +19,6 @@ header {
     display: flex;
     flex-direction: column;
     background-color: lightgray;
-}
-
-#navlinks {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(141, 107, 175);
-    color: white;
-    font-family: sans-serif;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
 }
 
 #left, #right, footer, #center {
