@@ -1,0 +1,18 @@
+#central{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+#post-button{
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+#name, #comment {
+    align-self: left;
+}
+
+#centra > label{
+    align-self: right;
+}

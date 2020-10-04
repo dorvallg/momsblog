@@ -50,4 +50,11 @@ h2, h3, h4 {
     padding: 0;
 }
 
+#store-list > li > a {
+    text-decoration: none;
+}
+
+#store-list > li:hover {
+    background-color: lightgray;
+}
 
