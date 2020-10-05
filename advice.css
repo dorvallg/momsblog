@@ -1,18 +1,30 @@
 #central{
     display: grid;
+    align-content: flex-start;
     grid-template-columns: auto 1fr;
+    font-family: sans-serif;
+    margin: 0 auto;
+    gap: 10px 5px;
 }
 
 #ask-button{
     grid-column: 2;
-    align-self: center;
-    justify-self: center;
+    justify-self: start;
+}
+
+#name, #name-id {
+    margin-top: 10px;
 }
 
 #name, #email, #question {
-    align-self: left;
+    justify-self: start;
+    width: 70vw;
 }
 
 #centra > label{
-    align-self: right;
+    justify-self: end;
+}
+
+#question {
+    height: 300px;
 }

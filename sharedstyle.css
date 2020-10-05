@@ -6,6 +6,7 @@ body {
 
 header, footer{
     background-color: plum;
+    font-family: sans-serif;
     text-align: center;
     width: 100vw;
 }
@@ -46,4 +47,8 @@ header {
 #other-left {
     background-color: pink;
     flex-basis: 200px;
+}
+
+h2, h3, h4 {
+    font-family: sans-serif;
 }
