@@ -4,11 +4,17 @@
     flex-wrap: wrap;
 }
 
-#central > button {
-    height: 10em;
-    width: 10em;
+.link {
+    list-style-type: none;
 }
 
-#central > button > a{
+.link > a {
+    font-size: 5em;
+    background-color: pink;
     text-decoration: none;
+    color: black;
+}
+
+.link > a:hover {
+    background-color: white;
 }
