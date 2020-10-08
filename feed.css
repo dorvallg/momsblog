@@ -29,3 +29,7 @@
     height: 300px;
 }
 
+#central {
+    flex-grow: 1;
+}
+
