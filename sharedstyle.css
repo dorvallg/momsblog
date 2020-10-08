@@ -54,3 +54,7 @@ header {
 h2, h3, h4 {
     font-family: sans-serif;
 }
+
+.navlink > a:hover {
+    background-color: black;
+}
