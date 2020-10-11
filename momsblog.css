@@ -57,3 +57,9 @@ h2, h3, h4 {
 #store-list > li:hover {
     background-color: lightgray;
 }
+
+@media(max-width: 1230px) {
+    #middle {
+        flex-direction: column;
+    }
+}

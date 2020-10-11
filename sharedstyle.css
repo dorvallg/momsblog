@@ -4,15 +4,12 @@ body {
     flex-direction: column;
 }
 
-header, footer{
+header {
+    font-size: 2em;
     background-color: plum;
     font-family: sans-serif;
     text-align: center;
     width: 100vw;
-}
-
-header {
-    font-size: 2em;
 }
 
 #navlinks {
@@ -57,4 +54,8 @@ h2, h3, h4 {
 
 .navlink > a:hover {
     background-color: black;
+}
+
+@media(max-width: 1230px) {
+
 }
