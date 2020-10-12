@@ -5,27 +5,13 @@
     font-family: sans-serif;
     margin: 0 auto;
     gap: 10px 5px;
-    min-width: 100vw;
 }
 
-#ask-button{
-    grid-column: 2;
-    justify-self: start;
+#form {
+    margin: 50px;
 }
 
-#name, #name-id {
-    margin-top: 10px;
-}
-
-#name, #email, #question {
-    justify-self: start;
-    width: 70vw;
-}
-
-#centra > label{
-    justify-self: end;
-}
-
-#question {
-    height: 300px;
+#comment {
+    min-height: 500px;
+    min-width: 800px;
 }
