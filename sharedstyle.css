@@ -64,4 +64,8 @@ h2, h3, h4 {
     #other-left {
         align-content: flex-start;
     }
+    
+    #central {
+        min-width: 100vw;
+    }
 }
