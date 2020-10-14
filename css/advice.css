@@ -12,8 +12,8 @@
 }
 
 #comment {
-    min-height: 500px;
-    min-width: 800px;
+    min-height: 30vh;
+    min-width: 60vw;
 }
 
 #sending {
