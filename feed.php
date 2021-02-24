@@ -1,0 +1,84 @@
+<?php
+require('Persistence.php');
+$comment_post_ID = 1;
+$db = new Persistence();
+$comments = $db->get_comments($comment_post_ID);
+$has_comments = (count($comments) > 0);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Feed</title>
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+    <link rel="stylesheet" href="css/sharedstyle.css">
+    <link rel="stylesheet" href="css/feed.css">
+    
+</head>
+<body>
+    <header>
+        <h1>No Mama, No Mirror, No Friends</h1>
+
+        <ul id="navlinks">
+            <li class="navlink"><a href="index.html">Home</a></li>
+            <li class="navlink"><a href="advice.html">Ask Advice</a></li>
+            <li class="navlink"><a href="blog.html">Blog</a></li>
+            <li class="navlink"><a href="musthaves.html">My Must Haves</a></li>
+            <li class="navlink"><a href="feed.html">Feed</a></li>
+        </ul>
+    </header>
+
+    <ol id="posts-list" class="hfeed<?php echo($has_comments?' has-comments':''); ?>">
+      <?php
+        foreach ($comments as &$comment) {
+          ?>
+          <li><article id="comment_<?php echo($comment['id']); ?>" class="hentry">	
+    				<footer class="post-info">
+    					<abbr class="published" title="<?php echo($comment['date']); ?>">
+    						<?php echo( date('d F Y', strtotime($comment['date']) ) ); ?>
+    					</abbr>
+
+    					<address class="vcard author">
+    						<a class="url fn" href="#"><?php echo($comment['comment_author']); ?></a>
+    					</address>
+    				</footer>
+
+    				<div class="entry-content">
+    					<p><?php echo($comment['comment']); ?></p>
+    				</div>
+    			</article></li>
+          <?php
+        }
+      ?>
+	</ol>
+
+    <div id="content">  
+        <main id="central">
+            <form action="comment.php" method="post" id = "form">
+                Name:<br>
+                <input type="text" name="name"><br>
+                Message:<br>
+                <textarea id = "comment" name="comment"></textarea><br><br>
+                <input type="hidden" name="comment_post_ID" value="<?php echo($comment_post_ID); ?>" id="comment_post_ID" />
+                <input id="submit" type="submit" value="Send">
+            </form>
+
+            <div id="sending">Sending...</div>
+
+        </main>
+
+        <aside id="other-left">
+            <h2>Ask me something!</h2>
+            <p>I'm here to help in any ways you may need! Weather that be as a mom figure or a friend.</p>
+            <p>Ask about outfits, ideas, life! Anything at all</p>
+            <p>Enter your name and email along with what you want toi hear from me about and I will email you back shortly!</p>
+        </aside>
+
+        
+    </div>
+
+    
+</body>
+</html>

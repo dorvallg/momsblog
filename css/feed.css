@@ -1,4 +1,4 @@
-#grid{
+#central{
     display: grid;
     align-content: flex-start;
     grid-template-columns: auto 1fr;
@@ -7,29 +7,27 @@
     gap: 10px 5px;
 }
 
-#post-button{
-    grid-column: 2;
-    justify-self: start;
-}
-
-#name, #name-id {
-    margin-top: 10px;
-}
-
-#name, #comment {
-    justify-self: start;
-    width: 70vw;
-}
-
-#central > label{
-    justify-self: end;
+#form {
+    margin: 50px;
+    padding: 20px;
+    background-color: #fadadd;
 }
 
 #comment {
-    height: 300px;
+    min-height: 30vh;
+    min-width: 60vw;
 }
 
-#central {
-    flex-grow: 1;
+#sending {
+    visibility: hidden;
+    transition: transform 5s;
+}
+
+#sending.move {
+    transform: translateX(50vw);
+}
+
+ol, li  {
+    list-style: none;
 }
 
