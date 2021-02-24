@@ -4,13 +4,13 @@
 
 .link > a {
     font-size: 5em;
-    background-color: pink;
+    background-color: #fadadd;
     text-decoration: none;
     color: black;
 }
 
 .link > a:hover {
-    background-color: white;
+    background-color: lightgray;
 }
 
 #other-left {

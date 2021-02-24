@@ -6,7 +6,7 @@ body {
 
 header {
     font-size: 2em;
-    background-color: plum;
+    background-color: #fadadd;
     font-family: sans-serif;
     text-align: center;
     width: 100vw;
@@ -16,7 +16,7 @@ header {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: rgb(141, 107, 175);
+    background-color: gray;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -38,13 +38,13 @@ header {
 
 #central {
     display: flex;
-    background-color: lightgray;
+    background-color: white;
     flex-grow: 1;
     min-height: 100vh;
 }
 
 #other-left {
-    background-color: pink;
+    background-color: lightgray;
     flex-basis: 200px;
 }
 

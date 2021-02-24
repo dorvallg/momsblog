@@ -1,5 +1,5 @@
 #left, #right {
-    background-color: pink;
+    background-color: lightgray;
     flex-basis: 200px;
 }
 
@@ -18,7 +18,7 @@
 #center {
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
+    background-color: white;
 }
 
 #left, #right, footer, #center {
@@ -49,14 +49,16 @@ h2, h3, h4 {
     font-size: 2em;
     padding: 0;
     font-family: "Comic Sans MS";
+    text-align: center;
 }
 
 #store-list > li > a {
     text-decoration: none;
+    color: black;
 }
 
 #store-list > li:hover {
-    background-color: lightgray;
+    background-color: white;
 }
 
 @media(max-width: 1230px) {
