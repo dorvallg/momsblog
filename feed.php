@@ -1,3 +1,4 @@
+<?php include('comment.php'); ?>
 <?php
 require('Persistence.php');
 $comment_post_ID = 1;
