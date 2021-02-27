@@ -1,10 +1,5 @@
-<?php include('comment.php'); ?>
 <?php
-require('Persistence.php');
-$comment_post_ID = 1;
-$db = new Persistence();
-$comments = $db->get_comments($comment_post_ID);
-$has_comments = (count($comments) > 0);
+    include 'comment.php';
 ?>
 
 <!DOCTYPE html>
@@ -31,43 +26,16 @@ $has_comments = (count($comments) > 0);
         </ul>
     </header>
 
-    <div id="content">  
-        <main id="central">
-
-        <ol id="posts-list" class="hfeed<?php echo($has_comments?' has-comments':''); ?>">
-        <?php
-            foreach ($comments as &$comment) {
-            ?>
-            <li><article id="comment_<?php echo($comment['id']); ?>" class="hentry">	
-                        <footer class="post-info">
-                            <abbr class="published" title="<?php echo($comment['date']); ?>">
-                                <?php echo( date('d F Y', strtotime($comment['date']) ) ); ?>
-                            </abbr>
-
-                            <address class="vcard author">
-                                <a class="url fn" href="#"><?php echo($comment['comment_author']); ?></a>
-                            </address>
-                        </footer>
-
-                        <div class="entry-content">
-                            <p><?php echo($comment['comment']); ?></p>
-                        </div>
-                    </article></li>
             <?php
-            }
-        ?>
-        </ol>
-
-
-
-            <form action="comment.php" method="post" id = "form">
+            echo "<form method='POST' action='".setComments()."'>
                 Name:<br>
-                <input type="text" name="name"><br>
+                <input type='text' name='name'><br>
                 Message:<br>
-                <textarea id = "comment" name="comment"></textarea><br><br>
-                <input type="hidden" name="comment_post_ID" value="<?php echo($comment_post_ID); ?>" id="comment_post_ID" />
-                <input id="submit" type="submit" value="Send">
-            </form>
+                <textarea id = 'comment' name='comment'></textarea><br><br>
+                <input type='hidden' name='message'/>
+                <input name='commentSubmit' type='submit' value='Send'>
+            </form>";
+            ?>
 
             <div id="sending">Sending...</div>
 
