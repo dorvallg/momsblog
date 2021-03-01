@@ -18,7 +18,8 @@ function getComments() {
   $sql = "SELECT * FROM comment";
   $result = $conn->query($sql);
   while ($row = $result->fetch_assoc()) {
-    echo "<script>console.log(".$row[u_name].")</script>";
+    $name = $row['u_name'];
+    echo "<script>console.log(".$name.")</script>";
     echo $row['u_name']."<br>";
     echo $row['u_comment']."<br><br>";
   }
