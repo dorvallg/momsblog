@@ -1,7 +1,6 @@
 #central{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     font-family: sans-serif;
     margin: 50px;
     padding: 20px;
@@ -11,7 +10,8 @@
     display: grid;
     align-content: flex-start;
     grid-template-columns: auto 1fr;
-
+    margin-bottom: 50px;
+    padding: 20px;
     background-color: #fadadd;
     gap: 10px 5px;
 }
