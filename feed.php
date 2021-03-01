@@ -26,16 +26,16 @@
         </ul>
     </header>
 
-            <?php
-            echo "<form method='POST' action='".setComments()."'>
-                Name:<br>
-                <input type='text' name='name'><br>
-                Message:<br>
-                <textarea id = 'comment' name='comment'></textarea><br><br>
-                <input type='hidden' name='message'/>
-                <input name='commentSubmit' type='submit' value='Send'>
-            </form>";
-            ?>
+<?php
+echo "<form method='POST' action='".setComments()."'>
+    Name:<br>
+    <input type='text' name='name'><br>
+    Message:<br>
+    <textarea id = 'comment' name='comment'></textarea><br><br>
+    <input type='hidden' name='message'/>
+    <input name='commentSubmit' type='submit' value='Send'>
+</form>";
+?>
 
         </main>
 
