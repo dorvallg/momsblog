@@ -34,3 +34,8 @@ ol, li  {
     list-style: none;
 }
 
+@media(max-width: 1230px) {
+    #central {
+        margin: 0px;
+    }
+}
