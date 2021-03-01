@@ -1,7 +1,7 @@
 <?php
 include 'database.php';
 
-$conn = OpenCon();
+//$conn = OpenCon();
 
 function setComments() {
   if(isset($_POST['commentSubmit'])) {
