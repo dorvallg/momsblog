@@ -37,8 +37,6 @@
             </form>";
             ?>
 
-            <div id="sending">Sending...</div>
-
         </main>
 
         <aside id="other-left">
