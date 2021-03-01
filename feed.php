@@ -1,6 +1,6 @@
 <?php
     include 'comment.php';
-    include 'database.php';
+    include 'databse.js';
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +38,6 @@
                 <input name='commentSubmit' type='submit' value='Send'>
             </form>
 
-            <?=getComments($conn)?>
         </div>
         
             <aside id='other-left'>

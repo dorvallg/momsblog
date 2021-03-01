@@ -10,6 +10,7 @@ function setComments($conn) {
   }
 }
 
+/* 
 function getComments($conn) {
   $sql = "SELECT * FROM comment";
   $result = $conn->query($sql);
@@ -17,6 +18,6 @@ function getComments($conn) {
     echo $row['u_name']."<br>";
     echo $row['u_comment']."<br><br>";
   }
-}
+*/
 
 ?>
