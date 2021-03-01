@@ -5,7 +5,7 @@
      $dbuser = 'feed-user';
      $dbpass = 'Laur3nMom$Bl0g';
      $db = 'comments';
-     $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+     $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or console.log("failed");
      
      return $conn;
      }
