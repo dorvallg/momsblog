@@ -5,13 +5,13 @@ function setComments($conn) {
     $u_name = $_POST['u_name'];
     $u_comment = $_POST['u_comment'];
 
-    $sql = "INSERT INTO comment_table(u_name, u_comment) VALUES('$u_name', '$u_comment')";
+    $sql = "INSERT INTO comment(u_name, u_comment) VALUES('$u_name', '$u_comment')";
     $result = $conn->query($sql);
   }
 }
 
 function getComments($conn) {
-  $sql = "SELECT * FROM comment_table";
+  $sql = "SELECT * FROM comment";
   $result = $conn->query($sql);
   while ($row = $result->fetch_assoc()) {
     echo $row['u_name']."<br>";
