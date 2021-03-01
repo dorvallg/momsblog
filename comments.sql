@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS bet;
-CREATE TABLE bet(
+DROP TABLE IF EXISTS comments;
+CREATE TABLE comments(
   id SERIAL PRIMARY KEY,
   u_name TEXT,
   u_comment TEXT
