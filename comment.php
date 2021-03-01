@@ -13,14 +13,15 @@ function setComments() {
   }
 }
 
-/* 
-function getComments($conn) {
+function getComments() {
+  $conn = OpenCon();
   $sql = "SELECT * FROM comment";
   $result = $conn->query($sql);
   while ($row = $result->fetch_assoc()) {
     echo $row['u_name']."<br>";
     echo $row['u_comment']."<br><br>";
   }
-*/
+  $conn -> close();
+}
 
 ?>
