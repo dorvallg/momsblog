@@ -1,4 +1,5 @@
 <?php
+    phpinfo();
     include 'comment.php';
     include 'database.php';
 ?>
