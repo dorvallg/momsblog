@@ -5,7 +5,7 @@
      $dbuser = 'feed-user';
      $dbpass = 'Laur3nMom$Bl0g';
      $db = 'comments';
-     $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or console.log("failed");
+     $conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
      
      return $conn;
      }
