@@ -38,6 +38,8 @@
                 <input name='commentSubmit' type='submit' value='Send'>
             </form>
 
+            <?=getComments()?>
+
         </div>
         
             <aside id='other-left'>
