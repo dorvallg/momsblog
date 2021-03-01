@@ -1,9 +1,9 @@
 <?php
 
 function setComments() {
-  if(isset($_POST['commentSubmit'])) {
-    echo "hello";
-  }
+  //if(isset($_POST['commentSubmit'])) {
+  echo "hello";
+  //}
 }
 
 ?>
