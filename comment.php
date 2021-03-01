@@ -5,7 +5,7 @@ $conn = OpenCon();
 
 function setComments() {
   if(isset($_POST['commentSubmit'])) {
-    echo "<script> console.log('here') </script>";
+    echo "help";
     //$u_name = $_POST['u_name'];
     //$u_comment = $_POST['u_comment'];
 
