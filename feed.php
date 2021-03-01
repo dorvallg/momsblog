@@ -29,7 +29,7 @@
 
     <div id='content'>
         <div id='central'>
-            <form id='form' method='POST' action=' <?setComments($conn)?>'>
+            <form id='form' method='POST' action=' <?=setComments($conn)?>'>
                 Name:<br>
                 <input type='text' name='u_name'><br>
                 Message:<br>
@@ -38,7 +38,7 @@
                 <input name='commentSubmit' type='submit' value='Send'>
             </form>
 
-            <?getComments($conn)?>;
+            <?=getComments($conn)?>;
         </div>
         
             <aside id='other-left'>
