@@ -1,9 +1,8 @@
 <?php
 include 'database.php';
 
-$conn = OpenCon();
-
 function setComments() {
+  $conn = OpenCon();
   if(isset($_POST['commentSubmit'])) {
     echo "help";
     //$u_name = $_POST['u_name'];
