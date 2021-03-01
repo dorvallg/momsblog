@@ -37,5 +37,6 @@ ol, li  {
 @media(max-width: 1230px) {
     #central {
         margin: 0px;
+        width: 100vw;
     }
 }
