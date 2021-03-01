@@ -38,5 +38,6 @@ ol, li  {
     #central {
         margin: 0px;
         width: 100vw;
+        box-sizing: border-box;
     }
 }
