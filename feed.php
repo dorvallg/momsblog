@@ -29,7 +29,7 @@
 
     <div id='content'>
         <div id='central'>
-            <form id='form' method='POST' >
+            <form id='form' method='POST' action='<?=setComments()?>'>
                 Name:<br>
                 <input type='text' name='u_name'><br>
                 Message:<br>

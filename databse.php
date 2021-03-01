@@ -8,6 +8,5 @@
      $conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
      
      return $conn;
-     }
-       
-    ?>
+     }  
+?>
