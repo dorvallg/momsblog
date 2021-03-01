@@ -1,16 +1,19 @@
 #central{
-    display: grid;
-    align-content: flex-start;
-    grid-template-columns: auto 1fr;
-    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-    gap: 10px 5px;
+    font-family: sans-serif;
 }
 
 #form {
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: auto 1fr;
+
     margin: 50px;
     padding: 20px;
     background-color: #fadadd;
+    gap: 10px 5px;
 }
 
 #comment {
