@@ -1,6 +1,6 @@
 <?php
 include 'database.php';
-include 'feed.css';
+echo "<link rel='stylesheet' href='css/feed.css'>";
 
 function setComments() {
   if(isset($_POST['commentSubmit'])) {
