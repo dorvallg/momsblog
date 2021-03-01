@@ -1,6 +1,8 @@
 <?php
 
-function setComments($conn) {
+$conn = openCon();
+
+function setComments() {
   if(isset($_POST['commentSubmit'])) {
     $u_name = $_POST['u_name'];
     $u_comment = $_POST['u_comment'];

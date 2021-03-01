@@ -1,11 +1,13 @@
 <?php
-echo "<script type='text/JavaScript'> 
-
-const mysql = require('mysql');
-
-app.use(express.json());
-
-let table = JSON.parse(fs.readFileSync('credentials.json', 'utf8'));
-let conn = mysql.createConnection(table);
-</script>";
-?>
+    function OpenCon()
+     {
+     $dbhost = 'localhost';
+     $dbuser = 'root';
+     $dbpass = 'Laur3nMom$Bl0g';
+     $db = 'comments';
+     $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+     
+     return $conn;
+     }
+       
+    ?>
