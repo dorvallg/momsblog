@@ -26,20 +26,19 @@
         </ul>
     </header>
 
-<?php
-echo "<form method='POST' action='".setComments()."'>
-    Name:<br>
-    <input type='text' name='name'><br>
-    Message:<br>
-    <textarea id = 'comment' name='comment'></textarea><br><br>
-    <input type='hidden' name='message'/>
-    <input name='commentSubmit' type='submit' value='Send'>
-</form>";
-?>
+    <?php
+    echo "<form method='POST' action='".setComments()."'>
+        Name:<br>
+        <input type='text' name='name'><br>
+        Message:<br>
+        <textarea id = 'comment' name='comment'></textarea><br><br>
+        <input type='hidden' name='message'/>
+        <input name='commentSubmit' type='submit' value='Send'>
+    </form>
 
         </main>
 
-        <aside id="other-left">
+        <aside id='other-left'>
             <h2>Ask me something!</h2>
             <p>I'm here to help in any ways you may need! Weather that be as a mom figure or a friend.</p>
             <p>Ask about outfits, ideas, life! Anything at all</p>
@@ -47,7 +46,8 @@ echo "<form method='POST' action='".setComments()."'>
         </aside>
 
         
-    </div>
+    </div>";
+    ?>
 
     
 </body>
