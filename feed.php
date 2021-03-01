@@ -36,17 +36,12 @@
         <input name='commentSubmit' type='submit' value='Send'>
     </form>
 
-        </main>
-
         <aside id='other-left'>
             <h2>Ask me something!</h2>
             <p>I'm here to help in any ways you may need! Weather that be as a mom figure or a friend.</p>
             <p>Ask about outfits, ideas, life! Anything at all</p>
             <p>Enter your name and email along with what you want toi hear from me about and I will email you back shortly!</p>
-        </aside>
-
-        
-    </div>"
+        </aside>";
     ?>
 
     
