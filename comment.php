@@ -14,14 +14,14 @@ function setComments() {
 }
 
 function getComments() {
-  //$conn = OpenCon();
-  //$sql = "SELECT * FROM comment";
-  //$result = $conn->query($sql);
-  //while ($row = $result->fetch_assoc()) {
-    //echo "<div>".$row['u_name']."</div>";
-    //echo "<div>".$row['u_comment']."</div>";
-  //}
-  //$conn -> close();
+  $conn = OpenCon();
+  $sql = "SELECT * FROM comment";
+  $result = $conn->query($sql);
+  while ($row = $result->fetch_assoc()) {
+    echo "<div>".$row['u_name']."</div>";
+    echo "<div>".$row['u_comment']."</div>";
+  }
+  $conn -> close();
 }
 
 ?>
