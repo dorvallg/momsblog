@@ -1,6 +1,5 @@
 <?php
 include 'database.php';
-echo "<link rel='stylesheet' href='css/feed.css'>";
 
 function setComments() {
   if(isset($_POST['commentSubmit'])) {
@@ -19,8 +18,8 @@ function getComments() {
   $sql = "SELECT * FROM comment";
   $result = $conn->query($sql);
   while ($row = $result->fetch_assoc()) {
-    echo "<div>".$row['u_name']."</div>";
-    echo "<div>".$row['u_comment']."</div>";
+    //echo "<div>".$row['u_name']."</div>";
+    //echo "<div>".$row['u_comment']."</div>";
   }
   $conn -> close();
 }
