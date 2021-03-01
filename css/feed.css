@@ -3,6 +3,8 @@
     flex-direction: column;
     margin: 0 auto;
     font-family: sans-serif;
+    margin: 50px;
+    padding: 20px;
 }
 
 #form {
@@ -10,8 +12,6 @@
     align-content: flex-start;
     grid-template-columns: auto 1fr;
 
-    margin: 50px;
-    padding: 20px;
     background-color: #fadadd;
     gap: 10px 5px;
 }
