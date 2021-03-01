@@ -1,9 +1,22 @@
 <?php
 
-function setComments() {
-  //if(isset($_POST['commentSubmit'])) {
-  echo "hello";
-  //}
+function setComments($conn) {
+  if(isset($_POST['commentSubmit'])) {
+    $u_name = $_POST['u_name'];
+    $u_comment = $_POST['u_comment'];
+
+    $sql = "INSERT INTO comment_table(u_name, u_comment) VALUES('$u_name', '$u_comment')";
+    $result = $conn->query($sql);
+  }
+}
+
+function getComments($conn) {
+  $sql = "SELECT * FROM comment_table";
+  $result = $conn->query($sql);
+  while ($row = $result->fetch_assoc()) {
+    echo $row['u_name']."<br>";
+    echo $row['u_comment']."<br><br>";
+  }
 }
 
 ?>
