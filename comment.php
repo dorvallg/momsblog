@@ -18,8 +18,8 @@ function getComments() {
   $sql = "SELECT * FROM comment";
   $result = $conn->query($sql);
   while ($row = $result->fetch_assoc()) {
-    echo "<div>".$row['u_name']."<br><br></div>";
-    echo "<div>".$row['u_comment']."<br><br><br></div>";
+    echo "<div style='max-width:60vw;'>".$row['u_name']."<br><br></div>";
+    echo "<div style='max-width:60vw;'>".$row['u_comment']."<br><br><br></div>";
   }
   $conn -> close();
 }

@@ -38,9 +38,7 @@
                 <input name='commentSubmit' type='submit' value='Send'>
             </form>
             
-            <div id="usercomments">
-                <?=getComments()?>
-            </div>
+            <?=getComments()?>
 
         </main>
         
