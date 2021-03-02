@@ -38,6 +38,7 @@
                 <input name='commentSubmit' type='submit' value='Send'>
             </form>
             
+            Comments: <br>
             <?=getComments()?>
 
         </main>
