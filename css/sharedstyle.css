@@ -46,6 +46,7 @@ header {
 #other-left {
     background-color: lightgray;
     flex-basis: 200px;
+    padding: 5px;
 }
 
 h2, h3, h4 {
