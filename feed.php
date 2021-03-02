@@ -37,8 +37,10 @@
                 <input type='hidden' name='message'/>
                 <input name='commentSubmit' type='submit' value='Send'>
             </form>
-
-            <?=getComments()?>
+            
+            <div id="usercomments">
+                <?=getComments()?>
+            </div>
 
         </main>
         

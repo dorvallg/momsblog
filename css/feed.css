@@ -16,6 +16,10 @@
     gap: 10px 5px;
 }
 
+#usercomments {
+    max-width: 65vw;
+}
+
 #comment {
     min-height: 30vh;
     min-width: 60vw;
